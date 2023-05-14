@@ -1,0 +1,86 @@
+/* Light Cyan: hsl(193, 38%, 86%)
+- Neon Green: hsl(150, 100%, 66%)
+
+### Neutral
+
+- Grayish Blue: hsl(217, 19%, 38%)
+- Dark Grayish Blue: hsl(217, 19%, 24%)
+- Dark Blue: hsl(218, 23%, 16%) */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(218, 23%, 16%);
+}
+
+.container{
+    /* border: 2px solid red; */
+    max-width: 600px;
+    margin: 12rem 25rem;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-color:   hsl(217, 19%, 24%);
+}
+
+.advice{
+    color: hsl(150, 100%, 66%);
+}
+
+.text{
+    color: #fff;
+    margin: 2rem 1rem;
+}
+
+.divider{
+    color: red;
+    margin-bottom: 1.5rem;
+}
+
+.hidden{
+    display: none;
+}
+
+.button{
+    background-color: hsl(150, 100%, 66%);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin: 0.2rem 15rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 20px hsl(150, 100%, 66%);
+}
+
+.dice{
+    margin: 0.75rem;
+    align-items: center;
+    align-self: center;
+}
+
+@media (max-width: 500px){
+    .hide{
+        display: none;
+    }
+    .hidden{
+        display: block;
+    }
+    .container{
+        /* border: 2px solid red; */
+        max-width: 450px;
+        margin: 8rem 6rem;
+    }
+    .mobile{
+        max-width: 150px;
+    }
+    .button{
+        margin: 0rem 3rem;
+    }
+}
